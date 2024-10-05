@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: stripe
+    database: heiaepbr001dwe01
+    schema: dbt_fundamentals
+    tables:
+      - name: stripe_payments
