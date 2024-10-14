@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: stripe
-    database: heiaepbr001dwe01
+    database: "{{ env_var('DBT_DATABASE') }}"
     schema: dbt_fundamentals
     tables:
       - name: stripe_payments
