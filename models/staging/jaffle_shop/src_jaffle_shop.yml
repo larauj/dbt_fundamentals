@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     description: a clone of a Postgres application database
-    database: heiaepbr001dwe01
+    database: "{{ env_var('DBT_DATABASE') }}"
     schema: dbt_fundamentals
     tables:
       - name: jaffle_shop_customers
